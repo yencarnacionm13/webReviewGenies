@@ -1,0 +1,63 @@
+:root {
+    --bs-blue: #5E50F9;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6a008a;
+    --bs-pink: #E91E63;
+    --bs-red: #f96868;
+    --bs-orange: #f2a654;
+    --bs-yellow: #f6e84e;
+    --bs-green: #46c35f;
+    --bs-teal: #58d8a3;
+    --bs-cyan: #57c7d4;
+    --bs-white: #ffffff;
+    --bs-gray: #434a54;
+    --bs-gray-light: #aab2bd;
+    --bs-gray-lighter: #e8eff4;
+    --bs-gray-lightest: #e6e9ed;
+    --bs-gray-dark: #0f1531;
+    --bs-black: #000000;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #1F3BB3;
+    --bs-secondary: #F1F1F1;
+    --bs-success: #34B1AA;
+    --bs-info: #52CDFF;
+    --bs-warning: #ffaf00;
+    --bs-danger: #F95F53;
+    --bs-light: #fbfbfb;
+    --bs-dark: #1E283D;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 31, 31, 31;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: 'Chivo', 'Segoe UI', Helvetica, sans-serif;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #1F1F1F;
+    --bs-body-bg: #fff;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }

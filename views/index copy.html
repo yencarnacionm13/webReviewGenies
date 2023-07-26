@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ReviewGenies Dashboard</title>
+  <!-- plugins:css -->
+  <!--  <link rel="stylesheet" href="../public/vendors/typicons/typicons.css"> -->
+  <!-- <link rel="stylesheet" href="../public/vendors/css/vendor.bundle.base.css">  -->
+
+  <link rel="stylesheet" href="../public/vendors/feather/feather.css">
+  <link rel="stylesheet" href="../public/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../public/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../public/vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../public/css/style.css">
+  <link rel="stylesheet" href="../public/css/styleslicer.css">
+
+  <link rel="shortcut icon" href="../public/images/logoMini.svg" />
+  <link rel="stylesheet" href="../public/css/index.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+    integrity="sha512-+vQ+jSa1HG6gePn+YmXcXoemUtDTMeEJOM5rs4eS1rClpOnKm2WAZRS/rjWZkSnna1mAMZ8upmOxrJgoUKX9lQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="../public/jspowerbi/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"
+    integrity="sha512-ohTmD3ZT8e0pYlkTa9xbQl04FBCay3cuk2NqWgjNmF8lLv3Wp4s+ME08X6msSoYYaD3qPpH99CFaXNzBA7yI+A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  -->
+  <!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+  <style>
+    iframe .notification-bar.unselectable.teaching {
+      display: none !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="">
+
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-2 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start position-relative">
+        <div>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="mdi mdi-arrow-left "></span>
+          </button>
+
+
+        </div>
+        <div class="d-flex justify-content-between mx-3 mx-lg-0">
+          <a class="navbar-brand brand-logo" href="/">
+            <img src="../public/images/logofull.svg" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="/">
+            <img src="../public/images/logoMini.svg" alt="logo" />
+          </a>
+        </div>
+
+
+        <div class="d-flex justify-content-end mx-3 mx-lg-0 menu-humberger">
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center " type="button"
+            data-bs-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </div>
+
+
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav px-3">
+          <li class="nav-item nav-category">Análisis de Mercado</li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">
+              <i class="mdi mdi-grid-large menu-icon"></i>
+              <span class="menu-title">Mercado Hoy</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/serietiempo">
+              <i class="mdi mdi-chart-line  menu-icon"></i>
+              <span class="menu-title">Precios: Series de Tiempo</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sectores">
+              <i class="mdi mdi-home-group menu-icon"></i>
+              <span class="menu-title">Sectores</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/factorrentaventa">
+              <i class="mdi mdi-division menu-icon"></i>
+              <span class="menu-title">Factor Renta/Venta</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/amenidades">
+              <i class="mdi mdi-elevator menu-icon"></i>
+              <span class="menu-title">Amenidades</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/busquedapropiedad">
+              <i class="mdi mdi-clipboard-outline menu-icon"></i>
+              <span class="menu-title">Búsqueda de Propiedades</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
+              aria-controls="ui-basic">
+              <i class="mdi mdi-sale  menu-icon"></i>
+              <span class="menu-title">Oportunidades</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/oportunidadesporprecio">Por precio/m²</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/oportunidadesportir">Por TIR</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item nav-category">Alquiler a Corto Plazo</li>
+          <li class="nav-item">
+            <a class="nav-link" href="/acpoferta">
+              <i class="mdi mdi-hotel menu-icon"></i>
+              <span class="menu-title">Oferta</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/acpseries">
+              <i class="mdi mdi-chart-areaspline menu-icon"></i>
+              <span class="menu-title">Series</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/acpamenidades">
+              <i class="mdi mdi-chart-bar menu-icon"></i>
+              <span class="menu-title">Amenidades</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/acptasaocupacional">
+              <i class="mdi mdi-chart-line-variant menu-icon"></i>
+              <span class="menu-title">Tasa Ocupacional</span>
+            </a>
+          </li>
+
+          <li class="nav-item nav-category">Economía Inmobiliaria</li>
+          <li class="nav-item">
+            <a class="nav-link" href="/econsectorreal">
+              <i class="mdi mdi-chart-bar-stacked menu-icon"></i>
+              <span class="menu-title">Sector Real</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/econlicencias">
+              <i class="mdi mdi-certificate menu-icon"></i>
+              <span class="menu-title">Licencias y Registros</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/econprecios">
+              <i class="mdi mdi-cash menu-icon"></i>
+              <span class="menu-title">Precios</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/econinflacion">
+              <i class="mdi mdi-chart-areaspline-variant menu-icon"></i>
+              <span class="menu-title">Inflación</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/econmonetario">
+              <i class="mdi mdi-currency-usd menu-icon"></i>
+              <span class="menu-title">Monetario</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/econfideicomisos">
+              <i class="mdi mdi-home-lock menu-icon"></i>
+              <span class="menu-title">Fideicomisos</span>
+            </a>
+          </li>
+
+          <div class="my-2"></div>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
+              aria-controls="ui-basic">
+              <i class="mdi mdi-calculator  menu-icon"></i>
+              <span class="menu-title">Calculadoras</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="calculadoraProforma">Modelo Proforma</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <div class="my-2"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="/password">
+              <i class=" mdi mdi mdi-settings  menu-icon"></i>
+              <span class="menu-title">Cambio Contraseña</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="exit()">
+              <i class=" mdi mdi mdi-exit-to-app  menu-icon"></i>
+              <span class="menu-title">Salir</span>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+      <!-- partial -->
+
+      <div class="main-panel">
+
+        <div class="content-wrapper">
+          <div class="row" style="height:100%;">
+            <section id="report-container" class="embed-container">
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+
+    </div>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- Used to display report embed error messages -->
+  <section class="error-container m-5">
+  </section>
+  </main>
+  <footer class="embed-container col-lg-12 col-md-12 col-sm-12 mb-0 mt-4"></footer>
+  <script src="./public/js/off-canvas.js"></script>
+  <script src="./public/js/hoverable-collapse.js"></script>
+  <script src="./public/js/template.js"></script>
+
+  <script src="../public/jspowerbi/powerbi.min.js"></script>
+  <script src="../public/jspowerbi/powerbi-report-authoring.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <script src="../public/js/index.js"></script>
+
+</body>
+
+</html>

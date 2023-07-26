@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ReviewGenies Dashboard</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../public/vendors/feather/feather.css">
+  <link rel="stylesheet" href="../public/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../public/vendors/ti-icons/css/themify-icons.css">
+<!--   <link rel="stylesheet" href="../public/vendors/typicons/typicons.css"> -->
+  <link rel="stylesheet" href="../public/vendors/simple-line-icons/css/simple-line-icons.css">
+<!--   <link rel="stylesheet" href="../public/vendors/css/vendor.bundle.base.css"> -->
+  <link rel="stylesheet" href="../public/css/style.css">
+
+
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../public/images/logoMini.svg" />
+</head>
+
+<body>
+
+  <div class="authentication-page">
+    <div class="row p-0">
+      <div class="col-md-6 p-0">
+        <div class="logo-bar p-4 px-sm-5">
+          <img src="../public/images/logofull.svg" height="30">
+        </div>
+        <div class="auth-form-light auth-form text-left py-5 px-5 px-sm-5 mt-5" style="padding-top: 0rem !important; margin-top: 10px !important; ">
+          <!-- <form name="MyForm" class="pt-3 px-5" action="/" method="POST"> -->
+          <form class="pt-3 px-5">
+            <h2 style="color: black;">Registro</h2>
+            <p class="fw-light mb-4" style="color: #7c8093;">Por favor, introduzca sus datos.</p>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label for="email">Correo Electrónico <span style="color: red;">*Obligatorio</span></label>
+                  <input type="email" placeholder="Correo Electrónico" class="form-control form-control-lg" id="email"
+                    name="email" required="required">
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label for="">Ocupacion <span style="color: red;">*Obligatorio</span></label>
+                  <select  placeholder="Ocupacion" class="form-select form-select-lg" id="ocupation">
+                    <option value="" selected>Ocupacion</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12" id="otherform">
+                <div class="form-group">
+                  <label for="otro">Otro</label>
+                  <input type="text" placeholder="Especifique" class="form-control form-control-lg" id="other" name="other">
+                </div>
+              </div>
+             
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label for="nombre">Nombre Completo <span style="color: red;">*Obligatorio</span></label>
+                  <input type="text" placeholder="Nombre Completo" class="form-control form-control-lg" id="nombre"
+                    name="nombre" required="required">
+                </div>
+              </div>
+
+<!--               <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="apellido">Apellido <span style="color: red;">*Obligatorio</span></label>
+                  <input type="text" placeholder="Apellido" class="form-control form-control-lg" id="apellido"
+                    name="apellido" required="required">
+                </div>
+              </div> -->
+
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label for="cedula">Cédula</label>
+                  <input type="text" placeholder="Cédula" class="form-control form-control-lg" id="identification"
+                    name="identification" required="required" attern="^\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}$">
+                </div>
+              </div>
+
+            <!--   <div class="col-lg-6 col-md-6 col-sm-12"></div> -->
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label for="password">Contraseña <span style="color: red;">*Obligatorio</span></label>
+                  <input type="password" placeholder="Contraseña" class="form-control form-control-lg" id="pswd"
+                    name="pswd">
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label for="password"> Repetir Contraseña <span style="color: red;">*Obligatorio</span></label>
+                  <input type="password" placeholder="Repetir Contraseña" class="form-control form-control-lg" id="repeatpswd"
+                    name="repeatpswd">
+                </div>
+              </div>
+
+            </div>
+
+           <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <div class="mt-3" >
+                  <input id="register" class="btn btn-block btn-primary w-100  font-weight-medium auth-form-btn"
+                    onclick="createregister()" value="Registrarse"/>
+                </div>
+              </div>
+            </div> 
+           </div>
+      
+            
+            <div class="text-center mt-4 fw-light small" style="color: #7c8093;">
+              <a href="/" class="text-dark">Volver al inicio</a>
+            </div>       
+          </form>
+
+        </div>
+      </div>
+
+      <div class="col-md-6 p-0">
+        <div class="aside-wrapper">
+          <div class="card p-3  property-card">
+            <iframe width="420" height="420" class="card-img-top" src="https://www.youtube.com/embed/WTRSEjlHoEc"
+              title="Street Fighter 6 - Pre-Order Trailer | PS5 Games" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+            <!-- </video> -->
+            <div class="card-body px-2">
+              <div class="d-flex flex justify-content-between align-items-center property-info">
+                <div class="title-tagline">
+                  <h4>Bienvenido a nuestro dashboard</h4>
+
+                </div>
+
+              </div>
+
+              <div class="property-feature">
+
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- plugins:js -->
+  <script src="../public/vendors/js/vendor.bundle.base.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="../public/js/register.js"></script>
+
+
+<!--   <script src="/js/off-canvas.js"></script>
+  <script src="/js/hoverable-collapse.js"></script>
+  <script src="/jstemplate.js"></script> -->
+  <!--   <script src="../public/js/login.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/powerbi.min.js"></script> -->
+  <!-- End custom js for this page  value="40214587896"-->
+</body>
+
+</html>
