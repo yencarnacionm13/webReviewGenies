@@ -54,8 +54,7 @@ jobs:
           api_location: ${{ env.API_LOCATION }}
           output_location: 'views'
           app_artifact_location: ${{ env.APP_ARTIFACT_LOCATION }}
-          api_build_command: 'npm install -g npm@16.15.0'
-          api_build_command2: 'npm run start'
+          
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
