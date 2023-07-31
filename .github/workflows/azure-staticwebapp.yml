@@ -52,8 +52,10 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: ${{ env.APP_LOCATION }}
           api_location: ${{ env.API_LOCATION }}
+          output_location: 'views'
           app_artifact_location: ${{ env.APP_ARTIFACT_LOCATION }}
-          api_build_command: 'npm run start'
+          api_build_command: 'npm install'
+          api_build_command2: 'npm run start'
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
