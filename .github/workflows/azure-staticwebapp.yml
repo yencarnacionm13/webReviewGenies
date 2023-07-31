@@ -52,9 +52,10 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: ${{ env.APP_LOCATION }}
           api_location: ${{ env.API_LOCATION }}
-          output_location: 'views'
+          output_location: ''
+          skip_app_build: true
           app_artifact_location: ${{ env.APP_ARTIFACT_LOCATION }}
-          
+
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
