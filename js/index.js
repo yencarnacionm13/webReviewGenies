@@ -187,7 +187,7 @@ function exit() {
         .then(() => {
             deleteCookie('if');
             deleteCookie('tk');
-            window.location.href = '/'
+            window.location.href = '../views/login.html'
         })
         .catch(error => console.log('error', error));
 

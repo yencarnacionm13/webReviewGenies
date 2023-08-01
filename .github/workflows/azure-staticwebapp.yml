@@ -21,7 +21,7 @@ on:
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  APP_LOCATION: "public" # location of your client code
+  APP_LOCATION: "views" # location of your client code
   API_LOCATION: "api" # location of your api source code - optional
   APP_ARTIFACT_LOCATION: "build" # location of client code build output
   AZURE_STATIC_WEB_APPS_API_TOKEN: "cd76ea84501b7abdb9ce140f245031426e41d6dcb445fab7a5a6fb111571b8ce3-9f37469c-9904-4138-add5-cc82cb26b02c00f97591" # secret containing deployment token for your static web app
@@ -51,10 +51,8 @@ jobs:
           ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: ${{ env.APP_LOCATION }}
-          api_location: ${{ env.API_LOCATION }}
           output_location: ''
           app_artifact_location: ${{ env.APP_ARTIFACT_LOCATION }}
-          api_build_command: 'npm run start'
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:

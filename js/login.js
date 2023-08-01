@@ -3,7 +3,7 @@ async function login()
 {
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
- ///document.getElementById('identification').value.replace('-','').replace('-','')
+  
   var raw = JSON.stringify({
     "email": document.getElementById('email').value,
     "password": document.getElementById('password').value.replace(/\s/g, "")
@@ -16,7 +16,7 @@ async function login()
     redirect: 'follow'
   };
 
-  fetch("/api/auth/signin", requestOptions)
+  fetch("https://apireviewgenies.azurewebsites.net/api/auth/signin", requestOptions)
     .then(response => response.json())
     .then(response => {
 
@@ -33,6 +33,7 @@ async function login()
 
     })
     .catch(error => console.log('error', error));
+
 
 }
 
@@ -114,6 +115,3 @@ function phone_number_mask() {
   document.getElementById("identification").value = myOutPut;
   document.getElementById("identification").setSelectionRange(theLastPos, theLastPos);
 }
-
-/* document.getElementById("identification").onkeypress = validate_int;
-document.getElementById("identification").onkeyup = phone_number_mask; */
